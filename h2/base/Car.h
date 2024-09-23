@@ -38,6 +38,6 @@ public:
     //获取小车编号
     string getNumber();
     //实现智能小车信息的本地文件保存
-    void save();
+    void save(string FILE_PATH);
 };
 

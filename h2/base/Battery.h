@@ -13,7 +13,7 @@ public:
 	Battery() {};
 	~Battery() {};
 	void print();
-	void save();
+	void save(string FILE_PATH);
 	void setParameter(string parameter);
 	void setOutputVoltage(int output_voltage);
 	void setChargeTime(int charge_time);

@@ -12,14 +12,14 @@ void Student::print()
 	this->car.print();
 }
 
-void Student::save()
+void Student::save(string FILE_PATH)
 {
 	ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
 	fw << "--------------------------------------------" << endl;
 	fw << "学号: " << this->stu_number << endl;
 	fw << "姓名: " << this->stu_name << endl;
-	this->car.save();
+	this->car.save(FILE_PATH);
 	fw.close();
 }
 

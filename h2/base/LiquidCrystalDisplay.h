@@ -12,7 +12,7 @@ public:
 	LiquidCrystalDisplay() {};
 	~LiquidCrystalDisplay() {};
 	void print();
-	void save();
+	void save(string FILE_PATH);
 	void setModel(string model);
 	void setSize(float size);
 };

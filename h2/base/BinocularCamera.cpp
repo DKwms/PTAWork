@@ -10,10 +10,10 @@ void BinocularCamera::print()
 	cout << "深度帧率: " << this->depth_frame_rate << endl;
 }
 
-void BinocularCamera::save()
+void BinocularCamera::save(string FILE_PATH)
 {
 	ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
     fw << "型号: " << this->model << endl;
     fw << "摄像头: " << this->camera << endl;
     fw << "RGB帧分辨率: " << this->rgb_resolving_power << endl;

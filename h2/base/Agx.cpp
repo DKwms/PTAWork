@@ -9,10 +9,10 @@ void Agx::print()
     cout << "存储: " << this->storage << "G" << endl;
 }
 
-void Agx::save()
+void Agx::save(string FILE_PATH)
 {
     ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
     fw << "型号: " << this->model << endl;
     fw << "AI: " << this->ai << "TOPS" << endl;
     fw << "CUDA核心: " << this->cudas << endl;

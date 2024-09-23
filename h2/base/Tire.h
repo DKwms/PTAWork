@@ -14,5 +14,5 @@ public:
 	void setTireModel(string tire_model);
 	void setTireSize(int tire_size);
 	void print();
-	void save();
+	void save(string FILE_PATH);
 };

@@ -16,7 +16,7 @@ public:
 	~Student() {}
 	Student(string stu_number, string stu_name);
 	void print();
-	void save();
+	void save(string FILE_PATH);
 	void setStuNumber(string stu_number);
 	void setStuName(string stu_name);
 	void setCar(Car car);

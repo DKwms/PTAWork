@@ -12,9 +12,9 @@ private:
     int power = 8;
 public:
     MultilineLidar() {};
-    ~MultilineLidar() {};
+    ~MultilineLidar() {}
+    void save(string FILE_PATH);
     void print();
-    void save();
     void setModel(string model);
     void setChannels(int channels);
     void setTestScope(int test_scope);

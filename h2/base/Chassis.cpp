@@ -4,10 +4,10 @@ Chassis::Chassis(string number)
 {
 	this->number = number;
 }
-void Chassis::save()
+void Chassis::save(string FILE_PATH)
 {
 	ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
     fw << "编号: " << this->number << endl;
     fw << "型号: " << this->model << endl;
     fw << "轴距: " << this->wheelbase <<"mm"<< endl;

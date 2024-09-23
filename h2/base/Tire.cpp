@@ -18,10 +18,10 @@ void Tire::print()
     cout << "轮胎型号: " << this->tire_model << endl;
     cout << "轮胎尺寸: " << this->tire_size <<"mm"<< endl;
 }
-void Tire::save()
+void Tire::save(string FILE_PATH)
 {
 	ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
     fw << "轮胎数量: " << this->tire_number << "个" << endl;
     fw << "轮胎型号: " << this->tire_model << endl;
     fw << "轮胎尺寸: " << this->tire_size << "mm" << endl;

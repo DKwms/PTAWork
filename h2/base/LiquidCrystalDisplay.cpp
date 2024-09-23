@@ -6,10 +6,10 @@ void LiquidCrystalDisplay::print()
     cout << "ͺ: " << this->size << endl;
 }
 
-void LiquidCrystalDisplay::save()
+void LiquidCrystalDisplay::save(string FILE_PATH)
 {
 	ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
     fw << "ߴ: " << this->size << endl;
     fw << "ͺ: " << this->size << endl;
 	fw.close();

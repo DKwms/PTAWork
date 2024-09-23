@@ -33,28 +33,28 @@ void Car::setID(string number)
 {
 	this->number = number;
 }
-void Car::save()
+void Car::save(string FILE_PATH)
 {
 	ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
     fw << "智能小车编号: " << this->number << endl;
     //调用其他部件的save方法
     fw << "底盘信息**************" << endl;
-    this->chassis.save();
+    this->chassis.save(FILE_PATH);
     fw << "轮胎信息**************" << endl;
-    this->tire.save();
+    this->tire.save(FILE_PATH);
     fw << "AGX套件信息**************" << endl;
-    this->agx.save();
+    this->agx.save(FILE_PATH);
     fw << "双目摄像头信息 **************" << endl;
-    this->binocular_camera.save();
+    this->binocular_camera.save(FILE_PATH);
     fw << "多线激光雷达信息**************" << endl;
-    this->multiline_lidar.save();
+    this->multiline_lidar.save(FILE_PATH);
     fw << "9轴陀螺仪信息**************" << endl;
-    this->gyroscope.save();
+    this->gyroscope.save(FILE_PATH);
     fw << "液晶显示器信息**************" << endl;
-    this->liquid_crystal_display.save();
+    this->liquid_crystal_display.save(FILE_PATH);
     fw << "电池信息**************" << endl;
-    this->batterie.save();
+    this->batterie.save(FILE_PATH);
     fw << "--------------------------------------------" << endl;
     fw << endl;
     fw.close();

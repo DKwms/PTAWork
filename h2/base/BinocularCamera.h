@@ -16,7 +16,7 @@ public:
 	BinocularCamera() {};
 	~BinocularCamera() {};
 	void print();
-	void save();
+	void save(string FILE_PATH);
 	void setModel(string model);
 	void setCamera(string camera);
 	void setRgbResolvingPower(string rgb_resolving_power);

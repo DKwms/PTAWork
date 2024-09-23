@@ -16,7 +16,7 @@ public:
     Agx() {};
     ~Agx() {};
     void print();
-    void save();
+    void save(string FILE_PATH);
     void setModel(string model);
     void setAi(int ai);
     void setCudas(int cudas);

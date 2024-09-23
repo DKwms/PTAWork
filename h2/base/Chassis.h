@@ -19,7 +19,7 @@ public:
     Chassis() {}
     ~Chassis() {}
     Chassis(string number);
-    void save();
+    void save(string FILE_PATH);
     void print();
     void setNumber(string number);
     void setModel(string model);

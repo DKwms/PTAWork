@@ -8,10 +8,10 @@ void MultilineLidar::print()
     cout << "功耗: " << this->power << "w" << endl;
 }
 
-void MultilineLidar::save()
+void MultilineLidar::save(string FILE_PATH)
 {
     ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
     fw << "型号: " << this->model << endl;
     fw << "通道数: " << this->channels << endl;
     fw << "测试范围: " << this->test_scope <<"m"<< endl;

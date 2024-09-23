@@ -6,10 +6,10 @@ void Gyroscope::print()
     cout << ": " << this->manufactor << endl;
 }
 
-void Gyroscope::save()
+void Gyroscope::save(string FILE_PATH)
 {
 	ofstream fw;
-    fw.open("../doc/test.txt",ios::app);
+    fw.open(FILE_PATH,ios::app);
     fw << "ͺ: " << this->model << endl;
     fw << ": " << this->manufactor << endl;
     fw.close();

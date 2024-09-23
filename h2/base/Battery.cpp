@@ -7,10 +7,10 @@ void Battery::print()
     cout << "充电时长: " << this->charge_time << "H" << endl;
 }
 
-void Battery::save()
+void Battery::save(string FILE_PATH)
 {
     ofstream fw;
-    fw.open("../doc/test.txt", ios::app);
+    fw.open(FILE_PATH, ios::app);
     fw << "参数: " << this->parameter << endl;
     fw << "对外供电: " << this->output_voltage << "V" << endl;
     fw << "充电时长: " << this->charge_time << "H" << endl;
