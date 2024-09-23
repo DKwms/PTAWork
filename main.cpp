@@ -18,13 +18,17 @@
 #include<string>
 using namespace std;
 
-
+// 当前页
 int curPage = 0;
+// 总页数 = message.size();
 int totalPage = 10;
+// 学生信息数据
 string message[10];
+
+// 自定义信息文件存储路径
 const string FILE_PATH = "D:\\cppProject\\homework\\doc\\home2.txt";
 
-// 钩子函数
+// windows键盘钩子函数
 static LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
 {
 
@@ -58,7 +62,6 @@ static LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lP
     }
     return CallNextHookEx(NULL, nCode, wParam, lParam);
 }
-
 /**
  * 前置加载，用于获取数据
  */
@@ -194,6 +197,7 @@ int init()
 
 int main()
 {
+    // 学生信息录入操作
     // init();
     // 执行doReadDate 之前必须进行init操作，进行学生车辆的录入
     doReadDate();
