@@ -2,8 +2,10 @@
 #include <iostream>
 #include <fstream>
 #include<string>
+
+#include "pattern/Publisher.h"
 using namespace std;
-class MultilineLidar//߼״
+class MultilineLidar : public Publisher
 {
 private:
     string model = "RS-Helios-16p";

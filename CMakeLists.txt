@@ -27,4 +27,10 @@ add_executable(homework
         main.cpp
         homework/homework2.cpp
         homework/homework2.h
+        homework/homework3.cpp
+        homework/homework3.h
+        homework/base/pattern/Publisher.cpp
+        homework/base/pattern/Publisher.h
+        homework/base/pattern/Subscriber.h
+        homework/base/pattern/Event.h
 )

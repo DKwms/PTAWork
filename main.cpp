@@ -1,10 +1,15 @@
 
 #include "homework/homework2.h"
+#include "homework/homework3.h"
 
-int main()
+
+/**
+ * 发布订阅模式测试
+ */
+void doHomework3()
 {
-
-    return 0;
+    homework3 homework3;
+    homework3.manaTest();
 }
 
 void doHomework2()
@@ -16,3 +21,8 @@ void doHomework2()
     homework2.doReadDate();
 }
 
+int main()
+{
+    doHomework3();
+    return 0;
+}

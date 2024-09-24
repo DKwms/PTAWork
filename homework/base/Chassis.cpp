@@ -71,4 +71,30 @@ void Chassis::setMaximumEndurance(int maximum_endurance)
 	this->maximum_endurance = maximum_endurance;
 }
 
+void Chassis::setStatus(int sCode)
+{
+	this->status = sCode;
+}
+
+
+void Chassis::notify(const Event& event)
+{
+	// 1代表前方障碍，2代表左前方障碍，3代表右前方 4后
+	cout<<"====底盘成功接受雷达消息，执行反应===="<<endl;
+	if(event.code==1)
+	{
+		cout<<"向后"<<endl;
+	}else if(event.code==2)
+	{
+		cout<<"向右"<<endl;
+	}else if(event.code==3)
+	{
+		cout<<"向左"<<endl;
+	}else
+	{
+		cout<<"向前"<<endl;
+	}
+	// int status; //1 上，2 下，3左，4右，5 停止
+}
+
 
