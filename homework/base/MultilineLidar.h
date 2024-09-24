@@ -20,4 +20,5 @@ public:
     void setTestScope(int test_scope);
     void setPower(int power);
 
+
 };

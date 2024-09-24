@@ -4,25 +4,27 @@ project(homework)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(homework
-        h2/base/Tire.h
-        h2/base/Tire.cpp
-        h2/base/Student.h
-        h2/base/Student.cpp
-        h2/base/MultilineLidar.h
-        h2/base/MultilineLidar.cpp
-        h2/base/LiquidCrystalDisplay.cpp
-        h2/base/LiquidCrystalDisplay.h
-        h2/base/Gyroscope.cpp
-        h2/base/Gyroscope.h
-        h2/base/Chassis.cpp
-        h2/base/Chassis.h
-        h2/base/Car.cpp
-        h2/base/Car.h
-        h2/base/BinocularCamera.cpp
-        h2/base/BinocularCamera.h
-        h2/base/Battery.cpp
-        h2/base/Battery.h
-        h2/base/Agx.cpp
-        h2/base/Agx.h
+        homework/base/Tire.h
+        homework/base/Tire.cpp
+        homework/base/Student.h
+        homework/base/Student.cpp
+        homework/base/MultilineLidar.h
+        homework/base/MultilineLidar.cpp
+        homework/base/LiquidCrystalDisplay.cpp
+        homework/base/LiquidCrystalDisplay.h
+        homework/base/Gyroscope.cpp
+        homework/base/Gyroscope.h
+        homework/base/Chassis.cpp
+        homework/base/Chassis.h
+        homework/base/Car.cpp
+        homework/base/Car.h
+        homework/base/BinocularCamera.cpp
+        homework/base/BinocularCamera.h
+        homework/base/Battery.cpp
+        homework/base/Battery.h
+        homework/base/Agx.cpp
+        homework/base/Agx.h
         main.cpp
+        homework/homework2.cpp
+        homework/homework2.h
 )
